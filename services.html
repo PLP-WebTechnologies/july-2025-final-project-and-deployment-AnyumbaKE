@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kraftig Systems</title>
+        <meta name="description" content="Kraftig Systems - Innovative Solutions for Modern Problems">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#">
+                    <div class="logo">KTS</div>
+                    <span class="brand-text">Kraftig Systems</span>
+                </a>
+
+                <nav class="nav" id="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+
+            <div id="mobileNav" class="mobile-nav" hidden>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </header>
+        <main>
+            <section id="services" class="section">
+                <div class="container">
+                    <header class="section-head">
+                        <h2>What we do</h2>
+                        <p class="muted">From architecture to operations — full stack network & cloud services so your teams can ship without friction.</p>
+                    </header>
+
+                    <div class="grid cols-4">
+                        <article class="card">
+                            <h3>Network design & deployment</h3>
+                            <p>Architecture, hardware selection and rollout plans tailored to requirements and budgets.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>SD-WAN & Connectivity</h3>
+                            <p>Secure overlay routing, traffic steering and SLA-driven links across sites.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Managed NOC</h3>
+                            <p>Monitoring, incident response and 24/7 support to keep services humming.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Security & Compliance</h3>
+                            <p>Firewalls, VPN, segmentation and compliance posture improvements.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div>© <span id="year"></span> Kraftig Systems — Built for reliability</div>
+                <div class="muted">
+                    <a href="#">Privacy</a> · <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
