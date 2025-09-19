@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kraftig Systems</title>
         <meta name="description" content="Kraftig Systems - Innovative Solutions for Modern Problems">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <header class="site-header">
@@ -17,11 +18,11 @@
                 </a>
 
                 <nav class="nav" id="nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
                 </nav>
 
                 <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
@@ -30,17 +31,17 @@
             </div>
 
             <div id="mobileNav" class="mobile-nav" hidden>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
             </div>
-
         </header>
 
         <main>
-            <section class="hero">
+            <!-- HERO -->
+            <section class="hero" id="hero">
                 <div class="container hero-grid">
                     <div class="hero-content">
                         <p class="eyebrow">Enterprise · Trusted connectivity</p>
@@ -48,8 +49,8 @@
                         <p class="lead">End-to-end network engineering, SD-WAN, cloud connectivity and managed services to accelerate your digital backbone.</p>
 
                         <div class="hero-actions">
-                            <a href="contact.html" class="btn primary">Get a demo</a>
-                            <a href="gallery.html" class="link">View work →</a>
+                            <a href="#contact" class="btn primary">Get a demo</a>
+                            <a href="#work" class="link">View work →</a>
                         </div>
 
                         <ul class="chips">
@@ -88,6 +89,164 @@
                 </div>
 
             </section>
+
+            <!-- About -->
+             <section id="about" class="section">
+                <div class="container about-grid">
+                    <div>
+                        <h2>Who we are</h2>
+                        <p class="muted">We are a team of dedicated professionals committed to delivering innovative solutions that drive success for our clients.</p>
+                        <p>Founded in 2010, Kraftig Systems has consistently pushed the boundaries of technology to provide cutting-edge services in network design, cloud solutions, and IT infrastructure management. Our mission is to empower businesses with reliable and scalable technology that meets their unique needs.</p>
+                        <p>Our team comprises experts with diverse backgrounds in IT, networking, and cloud computing, allowing us to offer comprehensive solutions that address complex challenges. We pride ourselves on our customer-centric approach, ensuring that every project is tailored to the specific requirements of our clients.</p>
+                    </div>
+                    <div>   
+                        <h2>Why we exist</h2>
+                        <p class="muted">Networks are the backbone. We design them for failure so your apps don't have to. Small teams, predictable ops and measurable outcomes — deployed with pragmatism and care.</p>
+
+                        <ul class="checklist">
+                            <li>Vendor-agnostic designs</li>
+                            <li>Cloud-first architecture</li>
+                            <li>Automated tests & runbooks</li>
+                            <li>Transparent pricing models</li>
+                            <li>Security-first mindset</li>
+                            <li>24/7/365 support</li>
+                            <li>Continuous improvement culture</li>
+                        </ul>
+                    </div>
+
+                    <aside class="card review">
+                        <h3>Get a free network review</h3>
+                        <p class="muted">30-minute session with one of our engineers.</p>
+                        <a class="btn" href="#contact">Book review</a>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- Services -->
+             <section id="services" class="section">
+                <div class="container">
+                    <header class="section-head">
+                        <h2>What we do</h2>
+                        <p class="muted">From architecture to operations — full stack network & cloud services so your teams can ship without friction.</p>
+                    </header>
+
+                    <div class="grid cols-4">
+                        <article class="card">
+                            <h3>Network design & deployment</h3>
+                            <p>Architecture, hardware selection and rollout plans tailored to requirements and budgets.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>SD-WAN & Connectivity</h3>
+                            <p>Secure overlay routing, traffic steering and SLA-driven links across sites.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Managed NOC</h3>
+                            <p>Monitoring, incident response and 24/7 support to keep services humming.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Security & Compliance</h3>
+                            <p>Firewalls, VPN, segmentation and compliance posture improvements.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work -->
+             <section id="work" class="section alt">
+                <div class="container">
+                    <div class="section-head between">
+                        <h2>Selected work</h2>
+                        
+                    </div>
+
+                    <div class="grid cols-3">
+                        <figure class="case card">
+                            <div class="case-visual v1">
+                            </div>
+                            <figcaption>
+                                <h4>Retail chain WAN</h4>
+                                <p class="muted">50+ branches, centralized POS resilience — reduced downtime by 87%.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="case card">
+                            <div class="case-visual v2"></div>
+                            <figcaption>
+                                <h4>Cloud migration</h4>
+                                <p class="muted">Migrated 200+ servers to AWS, cutting costs by 30% and improving scalability.</p>
+                            </figcaption>
+                        </figure>   
+                        <figure class="case card">
+                            <div class="case-visual v3"></div>
+                            <figcaption>
+                                <h4>Cybersecurity overhaul</h4>
+                                <p class="muted">Implemented multi-layered security for a financial firm, reducing breaches by 95%.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="case card">
+                            <div class="case-visual v4"></div>
+                            <figcaption>
+                                <h4>IoT integration</h4>
+                                <p class="muted">Connected 1,000+ devices for a smart factory, enhancing operational efficiency by 40%.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="case card">
+                            <div class="case-visual v5"></div>
+                            <figcaption>
+                                <h4>Disaster recovery setup</h4>
+                                <p class="muted">Established DR site for a healthcare provider, ensuring 99.99% data availability.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="case card">
+                            <div class="case-visual v6"></div>
+                            <figcaption>
+                                <h4>Unified communications</h4>
+                                <p class="muted">Deployed VoIP and collaboration tools for a global team, boosting productivity by 25%.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+              <section id="contact" class="section alt">
+                <div class="container contact-grid">
+                    <div class="card">
+                        <h2>Talk to our team</h2>
+                        <p class="muted">Tell us a bit about your needs and we'll reply within one business day.</p>
+
+                        <dl class="muted contact-info">
+                            <dt>Email</dt><dd>sales@Kraftig.co.ke</dd>
+                            <dt>Phone</dt><dd>+254 700 123 456</dd>
+                        </dl>
+                    </div>
+
+                    <form id="contactForm" class="card form-card" novalidate>
+                        <label>
+                            <span class="label">Name</span>
+                            <input name="name" required placeholder="Your name" />
+                        </label>
+
+                        <label>
+                            <span class="label">Work email</span>
+                            <input name="email" type="email" required placeholder="you@company.com" />
+                        </label>
+
+                        <label>
+                            <span class="label">Message</span>
+                            <textarea name="message" rows="4" required placeholder="Short summary of your use case"></textarea>
+                        </label>
+
+                        <div class="form-foot">
+                            <button type="submit" class="btn primary">Send message</button>
+                            <small id="formStatus" class="muted">We’ll get back in 1 business day</small>
+                        </div>
+                    </form>
+                </div>
+            </section>           
         </main>
 
         <footer class="site-footer">
